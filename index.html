@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facts..</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fixed typo here -->
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a href="./ricroll.html">About</a>
+      <span class="switchbtn" onclick="openNav()">Switch theme</span>
+      <div class="login-container">
+        <form>
+          <input type="text" placeholder="Username" name="username" />
+          <input type="text" placeholder="Password" name="psw" />
+          <button onclick="smtWentWrong()">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <center>
+      <h1>
+        Hello and welcome! We provide random facts every time you click the
+        button.
+      </h1>
+      <button class="button-86" role="button" onclick="search()">
+        click me
+      </button>
+      <hr />
+      <br />
+
+      <p id="p"></p>
+      <button class="button-92" role="button" onclick="copyData()">
+        Copy the text
+      </button>
+
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a onclick="gray()">Gray</a>
+          <a onclick="setWhite()">White</a>
+          <a onclick="setWhiteBlue()">White-Blue</a>
+          <a onclick="setWhiteRed()">White-Red</a>
+        </div>
+      </div>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>
