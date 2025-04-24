@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes...</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<div class="topnav">
+    <a class="active" href="https://narekcodes.github.io/RandomFacts/">Home</a>
+    <a href="./ricroll.html">About</a>
+    <a href="./index.html">Facts</a>
+    <a href="./joke.html">Jokes</a>
+    <div class="login-container">
+      <form>
+        <span class="switchbtn" onclick="openNav()">Switch theme</span>
+        <input type="text" placeholder="Username" name="username" />
+        <input type="text" placeholder="Password" name="psw" />
+        <button onclick="smtWentWrong()">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <center>
+    <h1>
+      Wanna smile?? click the button!
+    </h1>
+    <button class="button-86" role="button" onclick="jokes()">
+      click me
+    </button>
+    <hr />
+    <br />
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <button class="button-92" role="button" onclick="copyData()">
+      Copy the text
+    </button>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a onclick="gray()">Gray</a>
+        <a onclick="setWhite()">White</a>
+        <a onclick="setWhiteBlue()">White-Blue</a>
+        <a onclick="setWhiteRed()">White-Red</a>
+      </div>
+    </div>
+  </center>
+
+  <script src="joke.js"></script>
+</body>
+</html>
